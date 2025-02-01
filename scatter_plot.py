@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the data (replace 'sc_waterdata.csv' with your actual file name)
-df = pd.read_csv("sc_waterdata.csv")
+# Load the data with the correct file path
+df = pd.read_csv("data/sc_waterdata.csv")
 
 # Create scatter plot
 plt.figure(figsize=(8, 6))
@@ -14,5 +14,6 @@ plt.ylabel("Dissolved Oxygen (mg/L)")
 plt.title("Scatter Plot of Dissolved Oxygen vs. Temperature")
 plt.grid(True)
 
-# Show the plot
+# Save the plot
+plt.savefig("images/scatter_plot.png")  # Saves the plot to the images folder
 plt.show()
